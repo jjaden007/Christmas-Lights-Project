@@ -1,5 +1,5 @@
 #Date Last Updated: Jan 19, 2025
-#Developer: Jaden   
+#Developer: Jaden Singh
 #description: Button on/off switch
 from gpiozero import Button
 from gpiozero import LED

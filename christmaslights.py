@@ -1,3 +1,10 @@
+#Date Last Updated: Jan 19, 2025
+#Developer: Jaden Singh 
+#description: This Python script controls four LEDs using a button on a Raspberry Pi. 
+# Pressing the button cycles through four different lighting modes, each with a unique blinking pattern. 
+# The **gpiozero** library is used to handle the button and LED interactions. 
+# The script continuously checks the current mode and runs the corresponding lighting function until the mode is changed.
+
 from gpiozero import LED, Button
 import time
 
@@ -117,42 +124,3 @@ if __name__ == "__main__":
 
        
 main()
-""""
-def mode2()
-    while true:
-    button.wait_for_press()
-    print('THE BUTTON WAS PRESSED')
-    if on_off==False:
-        greenled.on(1.5)
-        redled.on(1.5)
-        blueled.on(1.5)
-        blueled2.on(1.5)
-        greenled.off(1.5)
-        redled.off(1.5)
-        blueled.off(1.5)
-        blueled2.off(1.5)
-
-mode1()
-
-
-while (True):
-    button.wait_for_press()
-    print('THE BUTTON WAS PRESSED')
-    if on_off==False:
-        greenled.on()
-        redled.on()
-        blueled.on()
-        blueled2.on()
-        time.sleep(1.5)
-        on_off=True
-        print ('LED is now on')
-    
-    elif on_off==True:
-        greenled.off()
-        redled.off()
-        blueled.off()
-        blueled2.off()
-        time.sleep(1.5)
-        print('LED is now off')
-        on_off=False
-"""
